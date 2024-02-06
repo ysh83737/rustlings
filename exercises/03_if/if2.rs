@@ -5,13 +5,16 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// 语法错误：else分支返回结果类型与预期不符
+// 逻辑错误：未涵盖所有测试分支
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
+    } else if fizzish == "fuzz" {
+        "bar"
     } else {
-        1
+        "baz"
     }
 }
 

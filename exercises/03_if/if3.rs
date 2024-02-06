@@ -2,17 +2,17 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// 语法错误：if/else分支返回结果类型不一致
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        4
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
