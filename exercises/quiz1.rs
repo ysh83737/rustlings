@@ -13,10 +13,16 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+// 逻辑错误：未实现目标函数
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(counts: u32) -> u32 {
+    let mut price = 2;
+    if counts > 40 {
+        price = 1;
+    }
+    counts * price
+}
 
 // Don't modify this function!
 #[test]
